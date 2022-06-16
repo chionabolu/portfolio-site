@@ -27,21 +27,56 @@ div.topNav {
 }
 
 /*style the resume button inside the navigation bar*/
-.button{
-    float: right;
-    padding: 6px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-right: 16px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 12px;
+
+a.button {
+  background-color: transparent;
+  border: 1px solid #eeb5e2;
+  box-sizing: border-box;
+  color: #484848;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 24px;
+  padding: 15px 15px;
+  position: fixed;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+
+a.button:hover,
+a.button:active {
+  outline: 0;
+}
+
+a.button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a.button:before {
+  background-color: #ebade5;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+a.button:hover:before {
+  background-color: #d76cf8;
+}
+
 /*End Top Navigation Bar*/
 
 /* when the screen is less than 600px wide, stack the links and
 the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
-    .topNav a, .topNav button.button {
+    .topNav a, .topNav a.button {
         float: none;
         display: block;
         text-align: left;
@@ -49,7 +84,7 @@ the search field vertically instead of horizontally */
         margin: 0;
         padding: 14px;
     }
-    .topNav button.buttons {
+    .topNav a.button {
         border: 1px solid #ccc;
     }
 }
