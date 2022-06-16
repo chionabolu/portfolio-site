@@ -5,6 +5,7 @@ div.topNav {
     overflow: hidden;
 }
 
+
 /*style the links inside the navigation bar*/
 .topNav a {
     float: left;
@@ -27,7 +28,6 @@ div.topNav {
 }
 
 /*style the resume button inside the navigation bar*/
-
 a.button {
   background-color: transparent;
   border: 1px solid #eeb5e2;
