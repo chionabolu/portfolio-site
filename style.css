@@ -104,6 +104,10 @@ nav ul li a{
 }
 }
 
-main p {
-  color: #c66815;
+/* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
+auto means the browser will determine its own equal middle. */
+main {
+  margin: 0 auto;
+  padding: 0 0 10px;
+  width: 960px;
 }
