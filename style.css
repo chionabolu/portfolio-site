@@ -11,17 +11,20 @@ body{
   width: 100%;
   font-family: 'Poppins';
 }
+/*height under this section adjusts the banner and hero image*/
 .BG{
   background: url(bg1.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100px;
+  height: 50px;
 }
 nav{
   background: rgb(241,241,241);
   height: 60px;
   width: 100%;
+  position:fixed;
+  z-index: 999;
 }
 label.logo{
   font-family:'Courier New', Courier, monospace;
