@@ -112,7 +112,7 @@ nav ul li a{
 
 /*hero image styling */
 .heroImage {
-  background-image: url(/img/wedding1.jpg);
+  background-image: url(img/wedding1.jpg);
   height: 60%;
   background-position: center;
   background-repeat: no-repeat;
