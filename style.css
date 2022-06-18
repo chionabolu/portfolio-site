@@ -2,11 +2,13 @@
 *{
   padding: 0;
   margin: 0;
+  height: 100%;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
 body{
+  width: 100%;
   font-family: 'Poppins';
 }
 .BG{
@@ -104,10 +106,16 @@ nav ul li a{
 }
 }
 
+.heroImage {
+  background-image: url(/img/wedding);
+}
+
 /* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
-auto means the browser will determine its own equal middle. */
+auto means the browser will determine its own equal middle.
 main {
   margin: 0 auto;
   padding: 0 0 10px;
   width: 960px;
 }
+
+*/
