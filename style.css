@@ -19,78 +19,7 @@ body{
   height: 50px;
   opacity: 100%;
 }
-nav{
-  background: rgb(241,241,241);
-  height: 60px;
-  width: 100%;
-  position:fixed;
-  z-index: 999;
-}
-label.logo{
-  background-image: url(img/logo.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20%;
-  position: relative;
-  line-height: 60px;
-  padding: 0 100px;
-}
-label.logo:hover{
-  color: #c77217;
-}
-nav ul{
-  float: right;
-  margin-right: 20px;
-}
-nav ul li {
-  display: inline-block;
-  line-height: 60px;
-  margin: 0 5px;
-}
-nav ul li a{
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 17px;
-  font-weight: 500;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  color: rgb(136, 136, 136);
-}
-a.active,a:hover{
-  color: #c66815;
-  transition: .5s;
-}
 
-@media (max-width: 952px){
-label.logo{
-  font-size: 30px;
-  padding-left: 50px;
-}
-nav ul li a{
-  font-size: 16px;
-}
-
-}
-@media (max-width: 858px){
-  ul{
-    position: fixed;
-    width: 60%;
-    height: 100px;
-    background: #e7e7e7c9;
-    top: 60px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-}
 
 /*hero image styling */
 .heroImage {
