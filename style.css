@@ -1,29 +1,130 @@
-*{
+* {
   padding: 0;
   margin: 0;
-  height: 100%;
-  text-decoration: none;
-  list-style: none;
   box-sizing: border-box;
 }
+
 body{
-  width: 100%;
-  font-family:Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: rgb(215, 72, 72);
 }
-/*height under this section adjusts the banner and hero image*/
-.BG{
-  background: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color:rgb(232, 232, 232);
   height: 50px;
-  opacity: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: rgb(22, 38, 33);
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: rgb(94, 94, 94);
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#resume {
+  border-radius: 5px;
+  padding: 5px 8px;
+  border: 1px solid orange;
+}
+
+#resume a {
+  color: orangered;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: rgb(120, 120, 120);
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
 }
 
 
-/*hero image styling */
+/*hero image styling 
 .heroImage {
-  background-image: url(img/wedding1.jpg);
+background-image: url(img/wedding1.jpg);
   height: 60%;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,8 +177,8 @@ a {
   color: #000;
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
-
-/* make the hero image work on mobile*/
+*/
+/* make the hero image work on mobile
 @media only screen and (max-width: 920px) {
   .insideContainer{
     margin-top: 150px;
@@ -98,7 +199,8 @@ main {
 }
 
 */
-
+/*
 footer {
   text-align: center;
 }
+*/

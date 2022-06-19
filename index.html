@@ -4,33 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/e48d166edc.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Chi Onabolu | Home</title>
   </head>
 
   <body>
-    <!--Header-->
-    <div class="BG">
+    <header>
+      <!--Logo-->
+      <div id="brand"><a href="index.html">Chi Onabolu</a></div>
       <nav>
-
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="resume"><a href="resume.html">Resume</a></li>
+        </ul>
       </nav>
-    </div>
-
-    <!--Hero Image Section-->
-    <div class="heroImage">
-      <div class="insideContainer">
-        <h1>Hero Image Sample</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
-        <a class="btn" href="portfolio.html">Click Here</a>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="resume"><a href="resume.html">Resume</a></li> 
+        </ul>
       </div>
-    </div>
-
-    <footer>
-      <p>&copy; 2021 - Chi Onabolu</p>
-    </footer>
+    </header>
+    <!--Reference javascript document-->
+    <script src="index.js"></script>
   </body>
 </html>
