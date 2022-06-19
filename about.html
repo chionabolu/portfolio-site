@@ -11,24 +11,37 @@
     <link rel="stylesheet" href="resume.css" />
     <title>Chi Onabolu | About</title>
   </head>
-  <body>
-    <!--Responsive Header-->
-    <div class="BG">
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Chi</label>
 
+  <body>
+    <header>
+      <!--Logo-->
+      <div id="brand"><a href="index.html">Chi O.</a></div>
+      <nav>
         <ul>
-          <li><a class="active" href="index.html">01.Home</a></li>
-          <li><a href="about.html">02.About</a></li>
-          <li><a href="portfolio.html">03.Portfolio</a></li>
-          <li><a href="contact.html">04.Contact</a></li>
-          <li><a href="resume.html">05.Resume</a></li>
+          <li><a href="about.html">01.About</a></li>
+          <li><a href="portfolio.html">02.Portfolio</a></li>
+          <li><a href="contact.html">03.Contact</a></li>
+          <li id="resume"><a href="resume.html">Resume</a></li>
         </ul>
       </nav>
-    </div>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="resume"><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--Reference javascript document-->
+    <script src="index.js"></script>
+
+    <!--Begin mainContainer-->
+    <main>
+      <p>Just some text</p>
+    </main>
   </body>
 </html>

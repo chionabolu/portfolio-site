@@ -123,74 +123,6 @@ ul li:hover {
 }
 
 
-/*hero image styling 
-.heroImage {
-background-image: url(img/wedding1.jpg);
-  height: 60%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.insideContainer {
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  color: white;
-  height: auto;
-  margin-top: 200px;
-}
-
-h1 {
-  font-size: 45px;
-  font-family: cursive;
-}
-
-h2 {
-  margin-top: 5px;
-  font-family: monospace;
-  font-size: 20px;
-  text-align: center;
-  font-weight: 400;
-}
-
-a {
-  margin-top: 20px;
-  font-size: 15px;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.btn {
-  display: inline-block;
-  width: 200px;
-  font-weight: bold;
-  padding: 10px;
-  color: #fff;
-  border: 4px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  transition: background-color 0.2s ease-out, color 0.2s ease-out;
-}
-
-.btn:hover,.btn:active {
-  background-color: #fff;
-  color: #000;
-  transition: background-color 0.3s ease-in, color 0.3s ease-in;
-}
-*/
-/* make the hero image work on mobile
-@media only screen and (max-width: 920px) {
-  .insideContainer{
-    margin-top: 150px;
-  }
-  h1{
-    font-size: 45px;
-  }
-  h2{
-    font-size: 20px;
-  }
-  }
 /* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
 auto means the browser will determine its own equal middle.
 main {
@@ -198,10 +130,3 @@ main {
   padding: 0 0 10px;
   width: 960px;
 }
-
-*/
-/*
-footer {
-  text-align: center;
-}
-*/

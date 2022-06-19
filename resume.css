@@ -1,105 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-*{
+* {
   padding: 0;
   margin: 0;
-  text-decoration: none;
-  list-style: none;
   box-sizing: border-box;
 }
+
 body{
-  font-family: 'Poppins';
-}
-.BG{
-  background: url(bg1.jpeg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-}
-nav{
-  background: rgb(241,241,241);
-  height: 60px;
-  width: 100%;
-}
-label.logo{
-  font-family:'Courier New', Courier, monospace;
-  color: rgb(121, 121, 121);
-  font-size: 35px;
-  line-height: 60px;
-  padding: 0 100px;
-  font-weight: 500;
-}
-label.logo:hover{
-  color: #c77217;
-}
-nav ul{
-  float: right;
-  margin-right: 20px;
-}
-nav ul li {
-  display: inline-block;
-  line-height: 60px;
-  margin: 0 5px;
-}
-nav ul li a{
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 17px;
-  font-weight: 500;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  color: rgb(136, 136, 136);
-}
-a.active,a:hover{
-  color: #c66815;
-  transition: .5s;
-}
-.checkbtn{
-  font-size: 25px;
-  color: rgb(178, 98, 13);
-  float: right;
-  line-height: 60px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: none ;
-}
-@media (max-width: 952px){
-label.logo{
-  font-size: 30px;
-  padding-left: 50px;
-}
-nav ul li a{
-  font-size: 16px;
+  background-color: white;
+  color: #633D33;
 }
 
+header a {
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
 }
-@media (max-width: 858px){
-  .checkbtn{
-    display: block;
-  }
-  ul{
-    position: fixed;
-    width: 60%;
-    height: 100vh;
-    background: #e7e7e7c9;
-    top: 60px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  
-#check:checked ~ ul{
+
+header {
+  padding: 0 20px;
+  background-color: #F6EBEB;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #C1958A;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: #C1958A;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#resume {
+  border-radius: 5px;
+  padding: 5px 8px;
+  border: 1.5px dotted #C49576;
+}
+
+#resume a {
+  color: #633D33;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: #C1958A;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
   left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
 }
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+
+
+/* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
+auto means the browser will determine its own equal middle.
+main {
+  margin: 0 auto;
+  padding: 0 0 10px;
+  width: 960px;
 }
