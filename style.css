@@ -6,16 +6,17 @@
 
 body{
   background-color: white;
-  color: rgb(215, 72, 72);
+  color: #633D33;
 }
 
 header a {
   text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 header {
   padding: 0 20px;
-  background-color:rgb(232, 232, 232);
+  background-color: #F6EBEB;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -29,7 +30,7 @@ header {
 }
 
 #brand a {
-  color: rgb(22, 38, 33);
+  color: #C1958A;
 }
 
 ul {
@@ -41,7 +42,7 @@ ul {
 }
 
 ul a {
-  color: rgb(94, 94, 94);
+  color: #C1958A;
 }
 
 ul li {
@@ -57,11 +58,11 @@ ul li:hover {
 #resume {
   border-radius: 5px;
   padding: 5px 8px;
-  border: 1px solid orange;
+  border: 1.5px dotted #C49576;
 }
 
 #resume a {
-  color: orangered;
+  color: #633D33;
 }
 
 #hamburger-icon {
@@ -73,7 +74,7 @@ ul li:hover {
 #hamburger-icon div {
   width: 35px;
   height: 3px;
-  background-color: rgb(120, 120, 120);
+  background-color: #C1958A;
   margin: 6px 0;
   transition: 0.3s;
 }
@@ -111,7 +112,7 @@ ul li:hover {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   header nav {
     display: none;
   }
