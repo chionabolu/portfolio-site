@@ -133,10 +133,13 @@ auto means the browser will determine its own equal middle. */
   width: 960px;
 }
  
+@media only screen and (max-width: 700px) {
+  #mainContainer {
+    width: fit-content;
+  }
+}
+
  /* Hero text */
- #heroText {
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
- 
+ .heroText {
+   padding: 70px;
 }
