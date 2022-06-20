@@ -42,6 +42,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 ul a {
@@ -103,12 +106,14 @@ ul li:hover {
 }
 
 .mobile-menu {
+  background-color: #F6EBEB;
+  opacity: 95%;
   display: none;
   position: absolute;
   top: 50px;
   left: 0;
-  height: calc(100vh - 50px);
-  width: 100%;
+  height: calc(300px - 50px);
+  width: 700px;
 }
 
 .mobile-menu li {
@@ -142,4 +147,21 @@ auto means the browser will determine its own equal middle. */
  /* Hero text */
  .heroText {
    padding: 70px;
+}
+
+.secondNav ul {
+  list-style: none;
+  display: inline;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  width: 900px;
+  text-align: center;
+}
+
+.secondNav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #92725F;
+  font-size: 25px;
 }
