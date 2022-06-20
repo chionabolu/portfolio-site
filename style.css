@@ -7,6 +7,8 @@
 body{
   background-color: white;
   color: #633D33;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 header a {
@@ -24,13 +26,14 @@ header {
 
 #brand {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 26px;
   display: flex;
   align-items: center;
 }
 
 #brand a {
   color: #C1958A;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 ul {
@@ -122,11 +125,18 @@ ul li:hover {
   }
 }
 
-
 /* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
-auto means the browser will determine its own equal middle.
-main {
+auto means the browser will determine its own equal middle. */
+#mainContainer {
   margin: 0 auto;
   padding: 0 0 10px;
   width: 960px;
+}
+ 
+ /* Hero text */
+ #heroText {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ 
 }
