@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: white;
-  color: #633D33;
+  color: #633d33;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
@@ -18,7 +18,7 @@ header a {
 
 header {
   padding: 0 20px;
-  background-color: #F6EBEB;
+  background-color: #f6ebeb;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,7 @@ header {
 }
 
 #brand a {
-  color: #C1958A;
+  color: #c1958a;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -48,7 +48,7 @@ ul {
 }
 
 ul a {
-  color: #C1958A;
+  color: #c1958a;
 }
 
 ul li {
@@ -64,11 +64,11 @@ ul li:hover {
 #resume {
   border-radius: 5px;
   padding: 5px 8px;
-  border: 1.5px dotted #C49576;
+  border: 1.5px dotted #c49576;
 }
 
 #resume a {
-  color: #633D33;
+  color: #633d33;
 }
 
 #hamburger-icon {
@@ -80,7 +80,7 @@ ul li:hover {
 #hamburger-icon div {
   width: 35px;
   height: 3px;
-  background-color: #C1958A;
+  background-color: #c1958a;
   margin: 6px 0;
   transition: 0.3s;
 }
@@ -106,7 +106,7 @@ ul li:hover {
 }
 
 .mobile-menu {
-  background-color: #F6EBEB;
+  background-color: #f6ebeb;
   opacity: 95%;
   display: none;
   position: absolute;
@@ -137,16 +137,16 @@ auto means the browser will determine its own equal middle. */
   padding: 0 0 10px;
   width: 960px;
 }
- 
+
 @media only screen and (max-width: 700px) {
   #mainContainer {
     width: fit-content;
   }
 }
 
- /* Hero text */
- .heroText {
-   padding: 70px;
+/* Hero text */
+.heroText {
+  padding: 70px;
 }
 
 .secondNav ul {
@@ -162,12 +162,34 @@ auto means the browser will determine its own equal middle. */
 .secondNav a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #92725F;
+  color: #92725f;
   font-size: 25px;
 }
 
+/*Create 3 column layout that will be 1 colomn for smaller screens*/
+#grid-container {
+  display: grid;
+  gap: 50px;
+  padding: 40px;
+}
 
-/*Footer Socials*/
+.gridItem1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.gridItem2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+/*Footer Section*/
+
+footer {
+  padding: 100px;
+  width: 100%;
+  text-align: center;
+}
+
 /* Style all font awesome icons */
 .fa {
   padding: 15px;
@@ -188,24 +210,28 @@ auto means the browser will determine its own equal middle. */
 
 /* Facebook */
 .fa-facebook {
-  background: #FADBCF;
+  background: #fadbcf;
   color: white;
 }
 
 /* Twitter */
 .fa-instagram {
-  background: #FADBCF;
+  background: #fadbcf;
   color: white;
 }
 
 /* Twitter */
 .fa-github {
-  background: #FADBCF;
+  background: #fadbcf;
   color: white;
 }
 
 /* Twitter */
 .fa-linkedin {
-  background: #FADBCF;
+  background: #fadbcf;
   color: white;
+}
+
+footer h5 {
+  padding: 20px;
 }
