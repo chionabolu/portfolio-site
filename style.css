@@ -166,6 +166,7 @@ auto means the browser will determine its own equal middle. */
   font-size: 25px;
 }
 
+
 /*Footer Socials*/
 /* Style all font awesome icons */
 .fa {
@@ -174,36 +175,37 @@ auto means the browser will determine its own equal middle. */
   width: 50px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 /* Add a hover effect if you want */
 .fa:hover {
-  opacity: 0.7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 3);
+  text-decoration: none;
 }
 
 /* Set a specific color for each brand */
 
 /* Facebook */
 .fa-facebook {
-  background: #3B5998;
+  background: #FADBCF;
   color: white;
 }
 
 /* Twitter */
 .fa-instagram {
-  background: #55ACEE;
+  background: #FADBCF;
   color: white;
 }
 
 /* Twitter */
 .fa-github {
-  background: #55ACEE;
+  background: #FADBCF;
   color: white;
 }
 
 /* Twitter */
 .fa-linkedin {
-  background: #55ACEE;
+  background: #FADBCF;
   color: white;
 }
