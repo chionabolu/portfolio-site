@@ -182,6 +182,20 @@ auto means the browser will determine its own equal middle. */
   grid-row-start: 1;
   grid-row-end: 2;
 }
+
+#grid-container img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 10px;
+}
+
+#grid-container img:hover {
+  border: 5px dashed #c1958a;
+}
+
 /*Footer Section*/
 
 footer {
