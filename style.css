@@ -120,7 +120,7 @@ ul li:hover {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   header nav {
     display: none;
   }
@@ -138,7 +138,7 @@ auto means the browser will determine its own equal middle. */
   width: 960px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   #mainContainer {
     width: fit-content;
   }
@@ -182,23 +182,6 @@ auto means the browser will determine its own equal middle. */
   text-transform: uppercase;
   color: #92725f;
   font-size: 25px;
-}
-
-/*Create 3 column layout that will be 1 colomn for smaller screens*/
-#grid-container {
-  display: grid;
-  gap: 50px;
-  padding: 40px;
-}
-
-.gridItem1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.gridItem2 {
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
 
 /*Footer Section*/
