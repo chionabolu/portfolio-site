@@ -4,9 +4,11 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: white;
-  color: #633D33;
+  color: #633d33;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 header a {
@@ -16,7 +18,7 @@ header a {
 
 header {
   padding: 0 20px;
-  background-color: #F6EBEB;
+  background-color: #f6ebeb;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -24,13 +26,14 @@ header {
 
 #brand {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 26px;
   display: flex;
   align-items: center;
 }
 
 #brand a {
-  color: #C1958A;
+  color: #c1958a;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 ul {
@@ -39,10 +42,13 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 ul a {
-  color: #C1958A;
+  color: #c1958a;
 }
 
 ul li {
@@ -58,11 +64,11 @@ ul li:hover {
 #resume {
   border-radius: 5px;
   padding: 5px 8px;
-  border: 1.5px dotted #C49576;
+  border: 1.5px dotted #c49576;
 }
 
 #resume a {
-  color: #633D33;
+  color: #633d33;
 }
 
 #hamburger-icon {
@@ -74,7 +80,7 @@ ul li:hover {
 #hamburger-icon div {
   width: 35px;
   height: 3px;
-  background-color: #C1958A;
+  background-color: #c1958a;
   margin: 6px 0;
   transition: 0.3s;
 }
@@ -100,19 +106,21 @@ ul li:hover {
 }
 
 .mobile-menu {
+  background-color: #f6ebeb;
+  opacity: 90%;
   display: none;
   position: absolute;
   top: 50px;
   left: 0;
-  height: calc(100vh - 50px);
-  width: 100%;
+  height: calc(300px - 90px);
+  width: 900px;
 }
 
 .mobile-menu li {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   header nav {
     display: none;
   }
@@ -122,11 +130,110 @@ ul li:hover {
   }
 }
 
-
 /* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
-auto means the browser will determine its own equal middle.
-main {
+auto means the browser will determine its own equal middle. */
+#mainContainer {
   margin: 0 auto;
   padding: 0 0 10px;
-  width: 960px;
+  width: 900px;
+}
+
+@media only screen and (max-width: 900px) {
+  #mainContainer {
+    width: fit-content;
+  }
+}
+
+/* Hero text */
+.heroText {
+  padding: 70px;
+  color: white;
+  animation: neon 5s infinite;
+}
+
+@keyframes neon {
+  0%,
+  39%,
+  41%,
+  59%,
+  61%,
+  100% {
+    text-shadow: white 0 0 12px, #c5127a 0 0 24px, #c5127a 0 0 36px;
+  }
+
+  40%,
+  60% {
+    text-shadow: none;
+  }
+}
+
+.secondNav ul {
+  list-style: none;
+  display: inline;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  width: 900px;
+  text-align: center;
+}
+
+.secondNav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #92725f;
+  font-size: 25px;
+}
+
+/*Footer Section*/
+
+footer {
+  padding: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 60%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 3);
+  text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #fadbcf;
+  color: white;
+}
+
+/* Twitter */
+.fa-instagram {
+  background: #fadbcf;
+  color: white;
+}
+
+/* Twitter */
+.fa-github {
+  background: #fadbcf;
+  color: white;
+}
+
+/* Twitter */
+.fa-linkedin {
+  background: #fadbcf;
+  color: white;
+}
+
+footer h5 {
+  padding: 20px;
 }

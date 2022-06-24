@@ -107,13 +107,13 @@ ul li:hover {
 
 .mobile-menu {
   background-color: #f6ebeb;
-  opacity: 95%;
+  opacity: 90%;
   display: none;
   position: absolute;
   top: 50px;
   left: 0;
-  height: calc(300px - 50px);
-  width: 700px;
+  height: calc(300px - 90px);
+  width: 900px;
 }
 
 .mobile-menu li {
@@ -135,7 +135,7 @@ auto means the browser will determine its own equal middle. */
 #mainContainer {
   margin: 0 auto;
   padding: 0 0 10px;
-  width: 960px;
+  width: 900px;
 }
 
 @media only screen and (max-width: 900px) {
