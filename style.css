@@ -167,8 +167,7 @@ ul li:hover {
 }
 
 #secondNav {
-  height: 20%;
-  width: 300px;
+  width: 200px;
   position: fixed;
   z-index: 1;
   top: 100;
@@ -178,23 +177,40 @@ ul li:hover {
   padding-top: 20px;
 }
 
-#secondNav a {
+#secondNav a,
+.dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 15px;
   color: grey;
-  display: list-item;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
 }
 
-#secondNav a:hover {
+#secondNav a:hover,
+.dropdown-btn:hover {
   color: pink;
 }
 
+.dropdownContainer {
+  display: none;
+  background-color: rgb(242, 228, 229);
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  padding-right: 8px;
+}
 /*Page content*/
 /* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
 auto means the browser will determine its own equal middle. */
 #mainContainer {
-  margin-left: 300px;
+  margin-left: 200px;
   padding: 0px 10px;
 }
 
