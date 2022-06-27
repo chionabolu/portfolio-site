@@ -169,19 +169,25 @@ auto means the browser will determine its own equal middle. */
 
 .secondNav ul {
   list-style: none;
-  display: inline;
-  justify-content: space-around;
   margin: 0;
   padding: 0;
-  width: 900px;
-  text-align: center;
+  width: auto;
 }
 
-.secondNav a {
+.secondNav li {
+  float: left;
+}
+
+.secondNav li a {
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   color: #92725f;
   font-size: 25px;
+}
+
+.secondNav li a:hover {
+  color: #c1958a;
 }
 
 /*Footer Section*/
