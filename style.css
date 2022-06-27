@@ -64,7 +64,7 @@ ul li:hover {
 #resume {
   background-image: linear-gradient(to right, #dd5e89, #f7bb97);
   border-radius: 5px;
-  padding: 5px 8px;
+  padding: 30px 5px;
   border: 2px solid white;
 }
 
@@ -131,16 +131,14 @@ ul li:hover {
   }
 }
 
-/* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
-auto means the browser will determine its own equal middle. */
-#mainContainer {
+#heroContainer {
   margin: 0 auto;
   padding: 0 0 10px;
   width: 900px;
 }
 
 @media only screen and (max-width: 900px) {
-  #mainContainer {
+  #heroContainer {
     width: fit-content;
   }
 }
@@ -168,29 +166,46 @@ auto means the browser will determine its own equal middle. */
   }
 }
 
-.secondNav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
+#secondNav {
+  height: 20%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 100;
+  left: 0;
+  background-color: #f6ebeb;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.secondNav li {
-  float: left;
-}
-
-.secondNav li a {
-  display: block;
+#secondNav a {
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #92725f;
-  font-size: 25px;
+  font-size: 15px;
+  color: grey;
+  display: list-item;
 }
 
-.secondNav li a:hover {
-  color: #c1958a;
+#secondNav a:hover {
+  color: pink;
 }
 
+/*Page content*/
+/* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
+auto means the browser will determine its own equal middle. */
+#mainContainer {
+  margin-left: 300px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 700px) {
+  #secondNav {
+    padding-top: 15px;
+  }
+  #secondNav a {
+    font-size: 18px;
+  }
+}
 /*Footer Section*/
 
 footer {
