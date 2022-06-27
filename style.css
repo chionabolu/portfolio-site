@@ -62,13 +62,14 @@ ul li:hover {
 }
 
 #resume {
+  background-image: linear-gradient(to right, #dd5e89, #f7bb97);
   border-radius: 5px;
   padding: 5px 8px;
-  border: 1.5px dotted #c49576;
+  border: 2px solid white;
 }
 
 #resume a {
-  color: #633d33;
+  color: white;
 }
 
 #hamburger-icon {
