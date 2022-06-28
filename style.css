@@ -200,7 +200,7 @@ ul li:hover {
 .dropdownContainer {
   display: none;
   background-color: rgb(242, 228, 229);
-  padding-left: 8px;
+  padding-left: 0;
 }
 
 .fa-caret-down {

@@ -62,13 +62,14 @@ ul li:hover {
 }
 
 #resume {
+  background-image: linear-gradient(to right, #dd5e89, #f7bb97);
   border-radius: 5px;
-  padding: 5px 8px;
-  border: 1.5px dotted #c49576;
+  padding: 30px 5px;
+  border: 2px solid white;
 }
 
 #resume a {
-  color: #633d33;
+  color: white;
 }
 
 #hamburger-icon {
@@ -130,16 +131,14 @@ ul li:hover {
   }
 }
 
-/* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
-auto means the browser will determine its own equal middle. */
-#mainContainer {
+#heroContainer {
   margin: 0 auto;
   padding: 0 0 10px;
   width: 900px;
 }
 
 @media only screen and (max-width: 900px) {
-  #mainContainer {
+  #heroContainer {
     width: fit-content;
   }
 }
@@ -167,23 +166,62 @@ auto means the browser will determine its own equal middle. */
   }
 }
 
-.secondNav ul {
-  list-style: none;
-  display: inline;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-  width: 900px;
-  text-align: center;
+#secondNav {
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 100;
+  left: 0;
+  background-color: #f6ebeb;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.secondNav a {
+#secondNav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #92725f;
-  font-size: 25px;
+  font-size: 15px;
+  color: grey;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
 }
 
+#secondNav a:hover,
+.dropdown-btn:hover {
+  color: pink;
+}
+
+.dropdownContainer {
+  display: none;
+  background-color: rgb(242, 228, 229);
+  padding-left: 0;
+}
+
+.fa-caret-down {
+  padding-right: 8px;
+}
+/*Page content*/
+/* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
+auto means the browser will determine its own equal middle. */
+#mainContainer {
+  margin-left: 200px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 700px) {
+  #secondNav {
+    padding-top: 15px;
+  }
+  #secondNav a {
+    font-size: 18px;
+  }
+}
 /*Footer Section*/
 
 footer {
