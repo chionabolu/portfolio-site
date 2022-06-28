@@ -15,41 +15,24 @@
 
   <body>
     <header>
-      <!--Logo-->
-      <div id="brand"><a href="index.html">chidinma.</a></div>
-
-      <nav>
+      <!--Navigation bar-->
+      <nav role="navigation" class="primary-navigation">
         <ul>
-          <li><a href="about.html">about</a></li>
-          <li><a href="contact.html">contact</a></li>
-
-          <div class="subnav">
-            <button href="#" class="dropdown-btn">Portfolio
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdownContainer">
-              <li><a href="#">Websites</a></li>
-              <li><a href="#">Mobile Apps</a></li>
-              <li><a href="#">Link 3</a></li>
-            </div>
-            </div>
-
-            <div class="subnav">
-              <button href="#" class="dropdown-btn">LGGuide
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdownContainer">
-                <a href="#">Html</a>
-                <a href="#">CSS</a>
-                <a href="#">Javascript</a>
-                <a href="#">React</a>
-                <a href="#">Build a Portfolio</a>
-              </div>
-              </div>
-          <li id="resume"><a href="resume.html">RESUME</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Work &dtrif;</a>
+            <ul class="dropdown">
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Illustration</a></li>
+              <li><a href="#">Iconography</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
 
+<!--Mobile Navigation Menu-->
       <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
