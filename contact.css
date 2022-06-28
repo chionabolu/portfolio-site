@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+  }
+  
+  header a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  header {
+    padding: 0 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #brand {
+    font-weight: bold;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #brand a {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  
+  ul a {
+    color: #c1958a;
+  }
+  
+  ul li {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+  #resume {
+    background-image: linear-gradient(to right, #dd5e89, #f7bb97);
+    border-radius: 5px;
+    padding: 30px 5px;
+    border: 2px solid white;
+  }
+  
+  #resume a {
+    color: white;
+  }
+  
+  #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: #c1958a;
+    margin: 6px 0;
+    transition: 0.3s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    background-color: #f6ebeb;
+    opacity: 90%;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(300px - 90px);
+    width: 900px;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    header nav {
+      display: none;
+    }
+  
+    #hamburger-icon {
+      display: block;
+    }
+  }
+  
+  #heroContainer {
+    margin: 0 auto;
+    padding: 0 0 10px;
+    width: 900px;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    #heroContainer {
+      width: fit-content;
+    }
+  }
+  
+  /* Hero text */
+  .heroText {
+    padding: 70px;
+    color: white;
+    animation: neon 5s infinite;
+  }
+  
+  @keyframes neon {
+    0%,
+    39%,
+    41%,
+    59%,
+    61%,
+    100% {
+      text-shadow: white 0 0 12px, #c5127a 0 0 24px, #c5127a 0 0 36px;
+    }
+  
+    40%,
+    60% {
+      text-shadow: none;
+    }
+  }
+  
+  #secondNav {
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 100;
+    left: 0;
+    background-color: #f6ebeb;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  #secondNav a,
+  .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: grey;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  #secondNav a:hover,
+  .dropdown-btn:hover {
+    color: pink;
+  }
+  
+  .dropdownContainer {
+    display: none;
+    background-color: rgb(242, 228, 229);
+    padding-left: 0;
+  }
+  
+  .fa-caret-down {
+    padding-right: 8px;
+  }
+  /*Page content*/
+  /* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
+  auto means the browser will determine its own equal middle. */
+  #mainContainer {
+    margin-left: 200px;
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 700px) {
+    #secondNav {
+      padding-top: 15px;
+    }
+    #secondNav a {
+      font-size: 18px;
+    }
+  }
+  /*Footer Section*/
+  
+  footer {
+    padding: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Style all font awesome icons */
+  .fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 60%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 3);
+    text-decoration: none;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #fadbcf;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-instagram {
+    background: #fadbcf;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-github {
+    background: #fadbcf;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-linkedin {
+    background: #fadbcf;
+    color: white;
+  }
+  
+  footer h5 {
+    padding: 20px;
+  }
+  

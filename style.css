@@ -6,7 +6,7 @@
 
 body {
   background-color: white;
-  color: #633d33;
+  color: black;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
@@ -18,7 +18,6 @@ header a {
 
 header {
   padding: 0 20px;
-  background-color: #f6ebeb;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -32,8 +31,8 @@ header {
 }
 
 #brand a {
-  color: #c1958a;
-  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 ul {
