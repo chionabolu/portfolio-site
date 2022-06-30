@@ -16,46 +16,60 @@
   <body>
     <header>
       <!--Navigation bar-->
+      
       <nav role="navigation" class="primary-navigation">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Work &dtrif;</a>
+          <li><a href="index.html">home</a></li>
+          <li><a href="portfolio.html">portfolio &dtrif;</a>
             <ul class="dropdown">
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Illustration</a></li>
-              <li><a href="#">Iconography</a></li>
+              <li><a href="#">websites</a></li>
+              <li><a href="#">mobile apps</a></li>
+              <li><a href="#">games</a></li>
             </ul>
           </li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">lazygirlguide &dtrif;</a>
+            <ul class="dropdown">
+              <li><a href="#">html</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">javascript</a></li>
+              <li><a href="#">react</a></li>
+              <li><a href="#">drupal 9</a></li>
+              <li><a href="#">build a portfolio</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
       </nav>
 
-<!--Mobile Navigation Menu-->
-      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li id="resume"><a href="resume.html">Resume</a></li>
-        </ul>
-      </div>
-    </header>
-
-    <div id="heroContainer">
-      <div class="heroText">
-        <h1 class="topHalf">if user is alive:</h1>
-        <h1>print ("Hello! my name is Chi")</h1>
-      </div>
-    </div>
-
     <!--Begin mainContainer-->
     <div id="mainContainer">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore beatae possimus ex dicta libero illum asperiores sunt. Fugit sed, corporis sequi illum cupiditate expedita repellendus quos alias, id molestias unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia molestias sapiente ratione enim. Facere quasi iure voluptatem repudiandae ipsam saepe ipsa, eligendi, enim eveniet nulla repellendus, temporibus illum quod! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus necessitatibus earum dolor, porro adipisci, maxime ex cumque dolores, repudiandae autem libero voluptatum molestiae accusamus distinctio minus hic nisi sapiente quod! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam corrupti neque ipsam molestiae quos! Corrupti fuga similique laudantium tempore officiis, quisquam neque voluptates dolore a nesciunt expedita assumenda. Natus, ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quas? Dicta eveniet esse id quisquam, amet voluptatibus qui, at quibusdam neque harum sapiente? Vitae facere voluptates earum in beatae voluptas.
-    </p>
+    <h1 class="heroContainer">Let's be Friends!</h1>
+
+    <div class="row">
+      <div class="column">
+        <img src="img/headshot.JPG" style="width:85%">
+      </div>
+
+      <div class="column">
+    <form>
+      <fieldset>
+        <label for="form-name">Name</label>
+        <input type="text" id="form-name">
+       
+        <label for="form-email">Email</label>
+        <input type="email" id="form-email"> 
+
+        <label for="form-phone">Phone Number</label>
+        <input type="tel" id="form-phone">
+
+        <label for="form-message">Send a Message!</label>
+        <textarea id="form-message"></textarea>
+
+        <input type="submit" value="Send Message">
+      </fieldset>
+    </form>
+    </div>
   </div>
     <!--mainContainer ends-->
 
