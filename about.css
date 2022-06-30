@@ -132,25 +132,6 @@ ul li ul li a {
   }
 }
 
-.fa-caret-down {
-  padding-right: 8px;
-}
-/*Page content*/
-/* below shows how to center everything to the middle of the browser and it will adjust with the browser. 
-auto means the browser will determine its own equal middle. */
-#mainContainer {
-  margin-left: 200px;
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 700px) {
-  #secondNav {
-    padding-top: 15px;
-  }
-  #secondNav a {
-    font-size: 18px;
-  }
-}
 /*Footer Section*/
 
 footer {
