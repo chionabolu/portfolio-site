@@ -14,65 +14,33 @@
   </head>
 
   <body>
-    <header>
-      <!--Logo-->
-      <div id="brand"><a href="index.html">chidinma.</a></div>
-
-      <nav>
-        <ul>
-          <li><a href="about.html">about</a></li>
-          <li><a href="contact.html">contact</a></li>
-          <li id="resume"><a href="resume.html">RESUME</a></li>
-        </ul>
-      </nav>
-
-      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li id="resume"><a href="resume.html">Resume</a></li>
-        </ul>
-      </div>
-    </header>
-
-    <div id="heroContainer">
-      <div class="heroText">
-        <h1 class="topHalf">if user is alive:</h1>
-        <h1>print ("Hello! my name is Chi")</h1>
-      </div>
-    </div>
-<!--sidebar Navigation-->
-    <div id="secondNav">
-        <div class="subnav">
-        <button href="#" class="dropdown-btn">Portfolio
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdownContainer">
-          <a href="#">Websites</a>
-          <a href="#">Mobile Apps</a>
-          <a href="#">Link 3</a>
-          <a href="#">Link 4</a>
-        </div>
-        </div>
-
-        <div class="subnav">
-          <button href="#" class="dropdown-btn">Lazy Girls Guide
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdownContainer">
-            <a href="#">Html</a>
-            <a href="#">CSS</a>
-            <a href="#">Javascript</a>
-            <a href="#">React</a>
-            <a href="#">Drupal 9</a>
-            <a href="#">Build a Portfolio</a>
-          </div>
-          </div>
-
-    </div>
+     <!--Navigation bar-->
+      
+     <nav role="navigation" class="primary-navigation">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="portfolio.html">portfolio &dtrif;</a>
+          <ul class="dropdown">
+            <li><a href="#">websites</a></li>
+            <li><a href="#">mobile apps</a></li>
+            <li><a href="#">games</a></li>
+          </ul>
+        </li>
+        <li><a href="#">lazygirlguide &dtrif;</a>
+          <ul class="dropdown">
+            <li><a href="#">html</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">javascript</a></li>
+            <li><a href="#">react</a></li>
+            <li><a href="#">drupal 9</a></li>
+            <li><a href="#">build a portfolio</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li id="resume"><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
 
     <!--Begin mainContainer-->
     <div id="mainContainer">
