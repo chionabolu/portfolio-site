@@ -11,7 +11,6 @@ body {
   text-align: center;
 }
 
-
 /* navigation bars */
 nav .primary-navigation {
   margin: 0 auto;
@@ -88,8 +87,6 @@ ul li ul li a {
   transition: all 0.5s ease;
 }
 
-/* end */
-
 #resume {
   background-image: linear-gradient(to right, #dd5e89, #f7bb97);
   border-radius: 5px;
@@ -101,6 +98,7 @@ ul li ul li a {
   color: white;
 }
 
+/* end */
 #heroContainer {
   margin: 0 auto;
   padding: 0 0 10px;
@@ -135,7 +133,6 @@ ul li ul li a {
     text-shadow: none;
   }
 }
-
 
 /*Footer Section*/
 
