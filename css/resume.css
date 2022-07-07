@@ -139,7 +139,7 @@ h1 {
 }
 
 .me-img {
-  background: url(img/headshot.JPG) no-repeat center center;
+  background: no-repeat center center;
   background-size: 100%;
   background-position: 0px;
   border-radius: 100%;
