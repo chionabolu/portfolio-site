@@ -97,41 +97,78 @@ ul li ul li a {
   color: white;
 }
 
-#heroContainer {
-  margin: 0 auto;
-  padding: 0 0 10px;
-  width: 900px;
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
 }
 
-@media only screen and (max-width: 900px) {
-  #heroContainer {
-    width: fit-content;
-  }
+.hero img {
+  height: 37.5rem;
+  width: 37.5rem;
 }
 
-/* Hero text */
-.heroText {
-  padding: 70px;
-  color: white;
-  animation: neon 5s infinite;
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px;
 }
 
-@keyframes neon {
-  0%,
-  39%,
-  41%,
-  59%,
-  61%,
-  100% {
-    text-shadow: white 0 0 12px, #c5127a 0 0 24px, #c5127a 0 0 36px;
-  }
-
-  40%,
-  60% {
-    text-shadow: none;
-  }
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
 }
 
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+.more-about {
+  background-color: rgb(246, 246, 246);
+  padding: 1rem 6rem;
+}
+
+.more-about h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.more-about p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+}
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px;
+  padding: 20px;
+  margin: 10px;
+}
 /*Footer Section*/
 
 footer {
@@ -144,7 +181,7 @@ footer {
 .fa {
   padding: 15px;
   font-size: 30px;
-  width: 50px;
+  width: 60px;
   text-align: center;
   text-decoration: none;
   border-radius: 60%;

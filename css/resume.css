@@ -140,6 +140,7 @@ h1 {
 
 .me-img {
   background: no-repeat center center;
+  background-image: url('/portfolio site/img/headshot.JPG');
   background-size: 100%;
   background-position: 0px;
   border-radius: 100%;
