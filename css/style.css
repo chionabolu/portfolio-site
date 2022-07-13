@@ -133,7 +133,9 @@ ul li ul li a {
     text-shadow: none;
   }
 }
-
+#mainContainer {
+  box-sizing: border-box;
+}
 .projects {
   background-color: rgb(254, 251, 251);
   padding: 32px 0;
